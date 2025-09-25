@@ -1,0 +1,17 @@
+{
+  "name": "test-argon2",
+  "version": "0.44.0",
+  "description": "An Argon2 library for Node",
+  "license": "MIT",
+  "main": "argon2.cjs",
+  "types": "argon2.d.cts",
+  "scripts": {
+    "test": "node --test test.cjs"
+  },
+  "dependencies": {
+    "argon2": "^0.44.0"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  }
+}
