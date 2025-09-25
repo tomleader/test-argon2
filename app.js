@@ -4,9 +4,10 @@ const port = 9000
 const argon2 = require('argon2');
 
 app.get('/', async (req, res) => {
-    res.send('Hello World!')
+
     const hash = await argon2.hash("password");
     console.log(hash);
+    res.send('Hello World!' + hash)
 })
 
 app.listen(port, () => {
